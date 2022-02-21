@@ -1,0 +1,9 @@
+<form action="/ask" method="get">
+  <label for="question"></label>
+  <input type="text" id="question" name="question">
+  <input type="submit" value="ask">
+</form>
+
+<% if @answer %>
+  <p><%= @answer %></p>
+<% end %>
